@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>XML-decoder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="form-group">
+            <input type="file" name="file" id="input-file" style="display: none">
+            <label for="input-file" id="label-file" class="label-file">
+                <i id="i-file" class="fa fa-upload"></i>
+                <span id="span-file">Загрузить файл SMSBackupRestore</span>
+            </label>
+        </div>
+        <div class="form-group">
+            <form id="file-form" enctype="multipart/form-data" action="decoder.php" method="POST">
+                <input type="file" name="file" id="financier-file" style="display: none">
+                <input type="text" name="type" id="type" style="display: none" value="financier">
+                <label for="financier-file" id="label-financier" class="label-file">
+                    <i id="i-financier" class="fa fa-upload"></i>
+                    <span id="span-financier">Загрузить файл для Financier</span>
+                </label>
+                <input type="submit" id="financier-send" style="display: none;">
+            </form>
+        </div>
+        <!--<div class="form-group">
+            <form id="file-form" enctype="multipart/form-data" action="decoder.php" method="POST">
+                <input type="file" name="file" id="paymaster-file" style="display: none">
+                <input type="text" name="type" id="type" style="display: none" value="paymaster">
+                <label for="paymaster-file" id="label-paymaster" class="label-file">
+                    <i id="i-paymaster" class="fa fa-upload"></i>
+                    <span id="span-paymaster">Загрузить файл для PayMaster</span>
+                </label>
+                <input type="submit" id="paymaster-send" style="display: none;">
+            </form>
+        </div>-->
+        <!--<div class="form-group">
+            <form id="file-form" enctype="multipart/form-data" action="decoder.php" method="POST">
+                <input type="file" name="file" id="bluecoins-file" style="display: none">
+                <input type="text" name="type" id="type" style="display: none" value="bluecoins">
+                <label for="bluecoins-file" id="label-bluecoins" class="label-file">
+                    <i id="i-bluecoins" class="fa fa-upload"></i>
+                    <span id="span-bluecoins">Загрузить файл для Bluecoins</span>
+                </label>
+                <input type="submit" id="bluecoins-send" style="display: none;">
+            </form>
+        </div>-->
+        <div id="result">
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

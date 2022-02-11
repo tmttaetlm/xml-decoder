@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    height: 100vh;
+    background-color: #074457;
+    padding: 10px;
+}
+
+.form-group {
+    margin: 20px auto;
+}
+
+.label-file {
+    color: #d0d0d0;
+    background-color: #063644;
+    line-height: 60px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    display: block;
+    border: 1px solid #022530;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.label-file:hover, .label-file:focus {
+    background-color: #022530;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.has-file {
+    color: #008800;
+    border-color: #008800;
+}
+
+#result {
+    width: 720px;
+    margin: 0 auto;
+    color: white;
+}
+
+.incoming {
+    max-width: 300px;
+    background-color: #262d31;
+    padding: 10px 5px;
+    margin: 5px auto 5px 0;
+    border-radius: 5px;
+}
+
+.outcoming {
+    max-width: 300px;
+    background-color: #056162;
+    padding: 5px 10px;
+    margin: 5px 0 5px auto;
+    border-radius: 5px;
+}
